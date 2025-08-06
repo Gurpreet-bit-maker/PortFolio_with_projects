@@ -5,7 +5,7 @@ export default function HomePage() {
     //!perent div
     <>
       <div
-        className="h-[36vh] md:h-[100vh]  flex gap-17 md:gap-30 pt-10 p-2 pl-2 "
+        className="h-[35vh] md:h-[100vh]  flex gap-17 md:gap-30 pt-10 p-2 pl-2 "
         style={{ backgroundColor: "#171717" }}
       >
         {/* //* child divs */}
@@ -21,18 +21,17 @@ export default function HomePage() {
             Frontend Developer
           </p>
           {/* btn div */}
-          <div className="relative flex gap-1 mt-2 w-30 md:w-85 h-4">
+          <div className="relative flex gap-1 mt-2 w-35 md:w-85 h-4  justify-center">
             <a
-              className=" h-1  w-15"
+              className=" h-1  w-20"
               href="/public/files/Gurpreet_Singh_Resume.docx"
               download
             >
-              
-              <button className=" absolute top-0 left-0  text-white bg-green-600 text-[9px] md:text-lg border-white border-1 w-15  md:w-30 h-6 md:h-10 hover:bg-black hover:text-white rounded">
+              <button className=" absolute top-0 left-0  text-white bg-green-600 text-[10px] md:text-lg border-white border-1 w-1/2  md:w-30 h-6 md:h-10 hover:bg-black hover:text-white rounded">
                 Download CV
               </button>
             </a>
-            <button className="text-white md:ml-20 bg-gray-500 text-[9px] md:text-lg border-white border-1 w-15 md:w-30 h-6 md:h-10 hover:bg-white hover:text-black rounded">
+            <button className="text-white md:ml-20 bg-gray-500 text-[10px] md:text-lg border-white border-1 w-1/2 md:w-30 h-6 md:h-10 hover:bg-white hover:text-black rounded">
               Learn More
             </button>
           </div>
