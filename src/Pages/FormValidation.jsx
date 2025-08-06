@@ -1,4 +1,10 @@
 export default function FormValidation() {
+    let clickBtn = () => 
+    {
+        alert("form successfully submit");
+    }
+
+     
   return (
     <div className="bg-[#171717] text-[#4F4F4F] h-[50vh]">
       <h1 className="text-center text-white font-bold ">Get in touch</h1>
@@ -37,7 +43,7 @@ export default function FormValidation() {
             id=""
             className="placeholder-[#4F4F4F] border h-30 w-90  p-2 text-white "
           ></textarea>
-          <button className=" text-white bg-green-600 text-[12px] md:text-lg border-white border-1 mt-2 h-6 p-1">
+          <button onClick={clickBtn} className=" text-white bg-green-600 text-[12px] md:text-lg border-white border-1 mt-2 h-6 p-1">
             Submit Here
           </button>
         </div>
