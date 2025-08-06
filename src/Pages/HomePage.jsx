@@ -28,7 +28,7 @@ export default function HomePage() {
               download
             >
               
-              <button className=" absolute top-0 left-0  text-white bg-green-600 text-[9px] md:text-lg border-white border-1 w-15  md:w-30 md:h-10 hover:bg-black hover:text-white rounded">
+              <button className=" absolute top-0 left-0  text-white bg-green-600 text-[9px] md:text-lg border-white border-1 w-15  md:w-30 h-5 md:h-10 hover:bg-black hover:text-white rounded">
                 Download CV
               </button>
             </a>
