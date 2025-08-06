@@ -15,8 +15,8 @@ export default function About() {
       className=" h-[35vh]  md:h-[60vh] md:flex md:flex-col md:px-40"
     >
       {/* about */}
-      <h1 className="text-white text-center  md:text-3xl font-bold">About</h1>
-      <div className="text-white text-[9px] md:text-lg mt-2 md:mt-10">
+      <h1 className="text-white text-center text-lg md:text-3xl font-bold">About</h1>
+      <div className="text-white text-[10px] md:text-lg mt-2 md:mt-10">
         <p className="px-15 text-center leading-">
           Hello! I’m a passionate and motivated Frontend Developer with a
           Bachelor’s degree in Computer Applications (BCA). I have hands-on
@@ -34,11 +34,11 @@ export default function About() {
               className="text-black  text-center w-30 p-1  flex flex-col justify-center items-center md:h-50 md:w-50"
               key={index}
             >
-              <img className="w-7 md:w-15 " src={aboutImg} alt="" />
-              <h3 className="text-[10px] md:text-[17px] text-white md:pt-5">
+              <img className="w-10 md:w-15 " src={aboutImg} alt="" />
+              <h3 className="text-[12px] md:text-[17px] text-white md:pt-5 pt-3">
                 {item.title}
               </h3>
-              <h3 className="text-[9px] md:text-sm  text-gray-400 tracking-wider">
+              <h3 className="text-[10px] md:text-sm  text-gray-400 tracking-wider">
                 {item.id}
               </h3>
             </div>
