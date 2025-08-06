@@ -10,7 +10,7 @@ export default function Skills() {
   return (
     <div className=" bg-[#171717] h-[30vh]  flex flex-col text-center justify-center items-center">
       <h1 className="font-bold md:text-4xl font-bold text-white">Skills</h1>
-      <div className="flex gap-3 px-1 bg-[#212121] m-5 w-95">
+      <div className="flex flex-wrap gap-3 px-1 bg-[#212121] m-5 w-95 justify-center items-center ">
         {skillsData.map((item, id) => {
           return (
             <div
