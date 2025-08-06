@@ -11,11 +11,11 @@ export default function HomePage() {
         {/* //* child divs */}
         {/* //todo text-content div */}
         <div className="  w-40 md:w-180 h-50 md:h-150 pl-3 md:pl-10  flex flex-col justify-center items-center ">
-          <h1 className="text-white text-[16px] md:text-[3rem] md:font-bold">
+          <h1 className="text-white text-[18px] md:text-[3rem] md:font-bold">
             Hi, I am <br /> Gurpreet Singh
           </h1>
           <p
-            className="text-white text-[11px] md:text-lg tracking-wider md:w-85"
+            className="text-white text-[12px] md:text-lg tracking-wider md:w-85"
             style={{ color: "#676767" }}
           >
             Frontend Developer
