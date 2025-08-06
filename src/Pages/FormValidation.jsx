@@ -1,6 +1,6 @@
 export default function FormValidation() {
   return (
-    <div className="bg-[#171717] text-[#4F4F4F] h-[43vh]">
+    <div className="bg-[#171717] text-[#4F4F4F] h-[50vh]">
       <h1 className="text-center text-white font-bold ">Get in touch</h1>
       {/* Form div  */}
       <div className="flex flex-col justify-center ">
@@ -30,13 +30,17 @@ export default function FormValidation() {
             />
           </div>
         </div>
-        <textarea
-          name="msg"
-          placeholder="Massege here .. "
-          id=""
-          className="placeholder-[#4F4F4F] border h-30 w-90 ml-3 p-2 text-white "
-        ></textarea>
-        <button className=" text-white bg-green-600 text-[12px] md:text-lg border-white border-1 m-auto mt-2 h-6 p-1">Submit Here</button>
+        <div className=" h-45 flex flex-col justify-center items-center">
+          <textarea
+            name="msg"
+            placeholder="Massege here .. "
+            id=""
+            className="placeholder-[#4F4F4F] border h-30 w-90  p-2 text-white "
+          ></textarea>
+          <button className=" text-white bg-green-600 text-[12px] md:text-lg border-white border-1 mt-2 h-6 p-1">
+            Submit Here
+          </button>
+        </div>
       </div>
     </div>
   );
