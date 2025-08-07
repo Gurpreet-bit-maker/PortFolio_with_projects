@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function FormValidation() {
-  let { register, handleSubmit, reset } = useForm();
+  let {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm();
+
+  let [userdata, setuserData] = useState();
 
   let submitForm = (data) => {
     console.log(data);
+    setuserData([{ ...userdata },data]);
+
+    console.log(userdata);
     reset();
   };
+  useEffect(() => {
+    setuserData([{ ...userdata }]);
+  }, []);
 
   return (
     <div className="bg-[#171717] text-[#4F4F4F] h-[50vh]">
@@ -22,30 +35,42 @@ export default function FormValidation() {
           <div className=" text-center">
             <input
               type="text"
-              {...register("userName")}
+              {...register("userName", { required: "user name is required" })}
               placeholder="Name"
               className="border-b-2 border-gray-500 placeholder-[#4F4F4F] w-30 text-[13px] text-white mt-5 h-10"
             />
+            {errors.userName && (
+              <p className="text-red-300">{errors.userName.message}</p>
+            )}
             <input
               type="text"
-              {...register("lName")}
+              {...register("lName", { required: "lastname is required" })}
               placeholder="Last name"
               className="border-b-2 border-gray-500 placeholder-[#4F4F4F] w-30 text-[13px] text-white mt-5 h-10"
             />
+            {errors.lName && (
+              <p className="text-red-300">{errors.lName.message}</p>
+            )}
           </div>
           <div className="text-center">
             <input
               type="email"
-              {...register("email")}
+              {...register("email", { required: "email is required" })}
               placeholder="email"
               className="border-b-2 border-gray-500 placeholder-[#4F4F4F] w-30 text-[13px] text-white mt-5 h-10"
             />
+            {errors.email && (
+              <p className="text-red-300">{errors.email.message}</p>
+            )}
             <input
               type="number"
-              {...register("Phonenumber")}
+              {...register("Phonenumber", { required: "number is required" })}
               placeholder="Phone"
               className="border-b-2  border-gray-500 placeholder-[#4F4F4F] w-30 text-[13px] text-white mt-5 h-10"
             />
+            {errors.Phonenumber && (
+              <p className="text-red-300">{errors.Phonenumber.message}</p>
+            )}
           </div>
           <div className=" h-45 flex flex-col justify-center items-center">
             <textarea
@@ -60,6 +85,10 @@ export default function FormValidation() {
             >
               Submit Here
             </button>
+            {isSubmitSuccessful && (
+              <p className="text-green-300">successfully submited</p>
+            )}
+            {console.log(isSubmitSuccessful)}
           </div>
         </div>
       </form>
