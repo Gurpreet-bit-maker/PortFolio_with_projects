@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div
       style={{ backgroundColor: "#171717" }}
-      className=" h-[50vh]  md:h-[60vh] md:flex md:flex-col md:px-40"
+      className=" h-[50vh]  md:h-[70vh] md:flex md:flex-col md:px-40"
     >
       {/* about */}
       <h1 className="text-white text-center text-lg md:text-3xl font-bold">About</h1>

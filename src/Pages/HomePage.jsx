@@ -1,4 +1,5 @@
 import About from "./About";
+import img from "../../public/github.png";
 
 export default function HomePage() {
   return (
@@ -40,7 +41,7 @@ export default function HomePage() {
         <div className=" w-40 md:w-180 h-50 md:h-150  flex justify-center items-center">
           <img
             className="bg-white w-40 md:w-100 h-40 md:h-100 rounded-[50%] "
-            src=""
+            src={img}
             alt=""
           />
         </div>

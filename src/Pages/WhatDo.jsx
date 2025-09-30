@@ -3,8 +3,8 @@ export default function WhatDo() {
     " h-22 md:h-60 w-30 md:w-100 text-center pt-4 px-1 bg-[#212121] hover:bg-white hover:text-white";
   return (
     <>
-      <div className="  bg-[#171717] md:pt-10 h-50 md:h-[100vh] md:items-start   flex flex-col justify-start">
-        <h1 className=" bg-[#171717] text-lg md:text-4xl mt-5  font-bold text-center text-white ">
+      <div className="  bg-[#171717] md:pt-10 h-50 md:h-[80vh]    flex flex-col justify-start">
+        <h1 className=" bg-[#171717] text-lg md:text-4xl mt-5 md:mb-1 text-center font-bold  md:text-center text-white ">
           What i Do
         </h1>
 
