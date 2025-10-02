@@ -39,7 +39,7 @@ export default function FormValidation() {
 
   let jsondata = async () => {
     try {
-      let result = await fetch("http://localhost:8080/forms");
+      let result = await fetch("http://localhost:8080/forms/get");
       let data = await result.json();
       setD(data);
       setshow(!show);
