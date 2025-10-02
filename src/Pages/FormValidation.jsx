@@ -20,7 +20,7 @@ export default function FormValidation() {
 
     try {
       reset();
-      await fetch("http://localhost:8080/forms/post", {
+      await fetch("https://backendformhandling-production.up.railway.app/forms/post", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
