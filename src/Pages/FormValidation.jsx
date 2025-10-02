@@ -118,7 +118,7 @@ export default function FormValidation() {
             <button
               type="submit"
               // text-sm
-              className=" text-white bg-green-600 text-[12px] md:text-lg border-white border-1 mt-2 h-6 md:h-9 p-1"
+              className=" text-white bg-blue-600 text-[12px] md:text-lg border-white border-1 mt-2 h-6 md:h-9 p-1"
             >
               {" "}
               submit
