@@ -11,13 +11,11 @@ export default function FormValidation() {
   } = useForm();
 
   //* form status pending
- 
 
   let [userdata, setuserData] = useState([]);
 
   let submitForm = async (data) => {
     console.log(data);
-
     try {
       reset();
       await fetch("http://localhost:8080/forms/post", {
@@ -39,7 +37,9 @@ export default function FormValidation() {
 
   let jsondata = async () => {
     try {
-      let result = await fetch("http://localhost:8080/forms/get");
+      let result = await fetch(
+        "https://backendformhandling-production.up.railway.app/forms/get"
+      );
       let data = await result.json();
       setD(data);
       setshow(!show);
@@ -130,13 +130,14 @@ export default function FormValidation() {
           </div>
         </div>
       </form>
-      <button  onClick={jsondata} className="border-2 border-red-600">
+      <button onClick={jsondata} className="border-2 border-red-600">
         see all data
       </button>
       {show
         ? data.map((items, index) => {
             return (
               <div key={index} className="bg-red-200">
+                <b>`this is form data is ${index}`</b>
                 <p>{items.id}</p>
                 <p className="text-blue-500">{items.firstName}</p>
               </div>
