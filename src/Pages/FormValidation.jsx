@@ -38,7 +38,7 @@ export default function FormValidation() {
   let jsondata = async () => {
     try {
       let result = await fetch(
-        "https://backendformhandling-production.up.railway.app/forms/get"
+        "http://localhost:8080/forms/get"
       );
       let data = await result.json();
       setD(data);
