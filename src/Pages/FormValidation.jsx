@@ -11,7 +11,9 @@ export default function FormValidation() {
   } = useForm();
 
   //! using varible
-  const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8080";
+  const BASE_URL =
+    "https://backendformhandling-production.up.railway.app" ||
+    "http://localhost:8080";
 
   let [userdata, setuserData] = useState([]);
 
