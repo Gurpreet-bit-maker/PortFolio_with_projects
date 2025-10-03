@@ -134,17 +134,28 @@ export default function FormValidation() {
       <button onClick={jsondata} className="border-2 border-red-600">
         see all data
       </button>
-      {show
-        ? data.map((items, index) => {
-            return (
-              <div key={index} className="bg-red-200">
-                <b>`this is form data is ${index}`</b>
-                <p>{items.id}</p>
-                <p className="text-blue-500">{items.firstName}</p>
-              </div>
-            );
-          })
-        : null}
+      <br />
+
+      <div className="flex flex-wrap gap-2 p-2 bg-red-300 h-40">
+        {show
+          ? data.map((items, index) => {
+              return (
+                <div
+                  key={index}
+                  className="bg-yellow-300 p-2 h-25 text-sm rounded-lg"
+                >
+                  <b>`this is form data is ${index + 1}`</b>
+                  <p> this is your id : {items._id}</p>
+                  <p className="text-blue-500">
+                    {" "}
+                    your name is : {items.firstName}
+                  </p>
+                  <p> this is your msg : {items.msg}</p>
+                </div>
+              );
+            })
+          : null}
+      </div>
     </div>
   );
 }
