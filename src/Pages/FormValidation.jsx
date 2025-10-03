@@ -10,7 +10,8 @@ export default function FormValidation() {
     formState: { errors, isSubmitSuccessful },
   } = useForm();
 
-  //* form status pending
+  //! using varible
+  const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8080";
 
   let [userdata, setuserData] = useState([]);
 
@@ -18,7 +19,7 @@ export default function FormValidation() {
     console.log(data);
     try {
       reset();
-      await fetch("http://localhost:8080/forms/post", {
+      await fetch(`${BASE_URL}/forms/post`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -37,9 +38,7 @@ export default function FormValidation() {
 
   let jsondata = async () => {
     try {
-      let result = await fetch(
-        "http://localhost:8080/forms/get"
-      );
+      let result = await fetch(`${BASE_URL}/forms/get`);
       let data = await result.json();
       setD(data);
       setshow(!show);
