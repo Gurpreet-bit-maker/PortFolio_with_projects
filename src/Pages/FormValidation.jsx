@@ -26,7 +26,7 @@ export default function FormValidation() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-
+    
       if (!res.ok) {
         throw new Error("Failed to submit");
       }
@@ -131,18 +131,18 @@ export default function FormValidation() {
           </div>
         </div>
       </form>
-      <button onClick={jsondata} className="border-2 border-red-600">
+      <button onClick={jsondata} className="border-2 border-red-600 mb-2">
         see all data
       </button>
       <br />
 
-      <div className="flex flex-wrap gap-2 p-2 bg-red-300 h-40">
+      <div className="flex flex-wrap gap-2 bg-red-300">
         {show
           ? data.map((items, index) => {
               return (
                 <div
                   key={index}
-                  className="bg-yellow-300 p-2 h-25 text-sm rounded-lg"
+                  className="bg-yellow-300 p-2 mt-2 h-25 text-sm rounded-lg"
                 >
                   <b>`this is form data is ${index + 1}`</b>
                   <p> this is your id : {items._id}</p>
