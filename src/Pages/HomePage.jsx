@@ -1,5 +1,8 @@
 import About from "./About";
 import img from "../../public/github.png";
+import WhatDo from "./WhatDo";
+import Skills from "./Skills";
+import FormValidation from "./FormValidation";
 
 export default function HomePage() {
   return (
@@ -47,9 +50,11 @@ export default function HomePage() {
         </div>
         {/* About section */}
       </div>
-      <div>
-        <About />
-      </div>
+      <div></div>
+      <About />
+      <Skills />
+      <WhatDo />
+      <FormValidation/>
     </>
   );
 }

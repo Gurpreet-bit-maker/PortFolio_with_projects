@@ -26,7 +26,7 @@ export default function FormValidation() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-    
+
       if (!res.ok) {
         throw new Error("Failed to submit");
       }
@@ -131,8 +131,8 @@ export default function FormValidation() {
           </div>
         </div>
       </form>
-      <button onClick={jsondata} className="border-2 border-red-600 mb-2">
-        see all data
+      <button onClick={jsondata} className="border-2 border-red-600 mb-2 rounded-lg px-1">
+        {show ? <p className="text-black font-bold">All submited data</p> : <p className="text-green-800 ">See more data</p>}
       </button>
       <br />
 
