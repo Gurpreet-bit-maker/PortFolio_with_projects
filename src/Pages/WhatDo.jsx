@@ -39,7 +39,7 @@ export default function WhatDo() {
           </Link>
 
           <Link to="/fullstack">
-            <div className="border-green-300 border-b-2 text-center pt-4 px-1 bg-[#212121] hover:bg-white hover:text-white  w-30 md:w-100">
+            <div className="border-green-300  border-b-2 text-center pt-4 px-1 bg-[#212121] hover:bg-white hover:text-white  w-30 md:w-100 md:h-60">
               <i className="fa-brands fa-dev text-green-400 text-lg md:text-[50px]"></i>
               <h1 className="text-[12px] md:text-2xl md:pt-5 text-[#535353]">
                 {" "}

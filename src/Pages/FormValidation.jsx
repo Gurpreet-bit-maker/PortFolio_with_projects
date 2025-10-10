@@ -131,12 +131,12 @@ export default function FormValidation() {
           </div>
         </div>
       </form>
-      <button onClick={jsondata} className="border-2 border-red-600 mb-2 rounded-lg px-1">
+      {/* <button onClick={jsondata} className="border-2 border-red-600 mb-2 rounded-lg px-1">
         {show ? <p className="text-black font-bold">All submited data</p> : <p className="text-green-800 ">See more data</p>}
-      </button>
+      </button> */}
       <br />
 
-      <div className="flex flex-wrap gap-2 bg-red-300">
+      {/* <div className="flex flex-wrap gap-2 bg-red-300">
         {show
           ? data.map((items, index) => {
               return (
@@ -155,7 +155,7 @@ export default function FormValidation() {
               );
             })
           : null}
-      </div>
+      </div> */}
     </div>
   );
 }
