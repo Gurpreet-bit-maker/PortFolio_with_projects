@@ -15,7 +15,7 @@ export default function FrontendDev() {
   console.log(frontendProjects);
   return (
     <>
-      <div className="md:flex p-4  flex-wrap bg-green-100 rounded-lg shadow-md border-2">
+      <div className="md:flex p-4  flex-wrap bg-green-100 rounded-lg shadow-md">
         {frontendProjects.map((items, index) => {
           return (
             <div
@@ -38,7 +38,7 @@ export default function FrontendDev() {
                   <a href={items.codeLink}>Code Link</a>
                 </button>
                 <br />
-                <button className="bg-gradient-to-r from-purple-200 via-pink-100 to-yellow-100 mt-2 tracking-wider text-black px-1">
+                <button className="bg-gradient-to-r from-purple-200 via-pink-100 to-yellow-100 mt-2 tracking-wider text-black px-1 animate-pulse">
                   <a href={items.liveLink}>Live Demo</a>
                 </button>
               </div>
