@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function FrontendDev() {
   let [frontendProjects, setProjects] = useState([]);
-// http://localhost:8080/projects
+  // http://localhost:8080/projects
   useEffect(() => {
     axios
       .get("https://backendformhandling-production.up.railway.app/projects")
@@ -31,13 +31,17 @@ export default function FrontendDev() {
                 <p className="text-[#a1a1af] text-sm md:text-base mb-2">
                   {items.description}
                 </p>
-                <p className="text-gray-200 font-bold my-1">{items.tech.join(" - ")}</p>
+                <p className="text-gray-200 font-bold my-1">
+                  {items.tech.join(" - ")}
+                </p>
 
                 <button className="border-2 px-1 rounded-lg hover:border-green-400 text-[10px]">
                   <a href={items.codeLink}>Code Link</a>
                 </button>
                 <br />
-                <a href={items.liveLink}>Live Demo</a>
+                <button className="bg-gradient-to-r from-purple-200 via-pink-100 to-yellow-100 mt-2 tracking-wider text-black px-1">
+                  <a href={items.liveLink}>Live Demo</a>
+                </button>
               </div>
             </div>
           );
