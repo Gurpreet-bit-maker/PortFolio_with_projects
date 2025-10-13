@@ -31,8 +31,7 @@ export default function FrontendDev() {
                 <p className="text-[#a1a1af] text-sm md:text-base mb-2">
                   {items.description}
                 </p>
-                <p className="text-gray-200 font-bold my-1">
-                  {items.tech.join(" - ")}
+                <p className="text-gray-200 font-bold my-1"> Technology : { items.tech.join(" , ")}
                 </p>
 
                 <button className="border-2 px-1 rounded-lg hover:border-green-400 text-[10px]">

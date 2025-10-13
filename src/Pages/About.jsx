@@ -18,12 +18,7 @@ export default function About() {
       <h1 className="text-white text-center text-lg md:text-3xl font-bold">About</h1>
       <div className="text-white text-[10px] md:text-lg mt-2 md:mt-10">
         <p className="px-15 text-center leading-">
-          Hello! I’m a passionate and motivated Frontend Developer with a
-          Bachelor’s degree in Computer Applications (BCA). I have hands-on
-          experience in building responsive and user-friendly web applications
-          using HTML, CSS, JavaScript, and ReactJS. I’m also familiar with
-          modern development tools and workflows including Git and Tailwind CSS,
-          which help me write clean, maintainable, and optimized code.
+          Hi! I’m Gurpreet Singh, a passionate Full-Stack Web Developer. I specialize in building modern and responsive web applications using HTML, CSS, JavaScript, React, Node.js, Express, Tailwind, and MongoDB Atlas. I love turning ideas into real-world projects and continuously learning new technologies to grow as a developer..
         </p>
       </div>
       {/* details 4 cards */}

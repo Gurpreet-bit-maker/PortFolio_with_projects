@@ -22,7 +22,7 @@ export default function HomePage() {
             className="text-white text-[12px] md:text-lg tracking-wider md:w-85"
             style={{ color: "#676767" }}
           >
-            Frontend Developer
+            FullStack Developer
           </p>
           {/* btn div */}
           <div className="relative flex gap-1 mt-2 w-35 md:w-85 h-4  justify-center">
