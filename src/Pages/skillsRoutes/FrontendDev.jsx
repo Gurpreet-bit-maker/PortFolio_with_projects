@@ -37,7 +37,7 @@ export default function FrontendDev() {
                   <a href={items.codeLink}>Code Link</a>
                 </button>
                 <br />
-                <a href="">Live Demo</a>
+                <a href={items.liveLink}>Live Demo</a>
               </div>
             </div>
           );
