@@ -6,7 +6,7 @@ export default function FrontendDev() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/projects")
+      .get("https://backendformhandling-production.up.railway.app/projects")
       .then((response) => {
         setProjects(response.data);
       })
