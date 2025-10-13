@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function FrontendDev() {
   let [frontendProjects, setProjects] = useState([]);
-
+// http://localhost:8080/projects
   useEffect(() => {
     axios
       .get("https://backendformhandling-production.up.railway.app/projects")
@@ -15,7 +15,7 @@ export default function FrontendDev() {
   console.log(frontendProjects);
   return (
     <>
-      <div className="md:flex flex-wrap">
+      <div className="md:flex p-4  flex-wrap bg-green-100 rounded-lg shadow-md border-2">
         {frontendProjects.map((items, index) => {
           return (
             <div

@@ -36,7 +36,7 @@ let [projects, setProjects] = useState();
 
   return (
     <>
-      <h1 className="ml-2 text-2xl font-bold">Frontend Projects</h1>
+      <h1 className="text-2xl md:text-2xl font-bold text-center">Frontend Projects</h1>
       <FrontendDev/>
       {/* {frontendPro.map((items, index) => {
         <h1>hello</h1>;
