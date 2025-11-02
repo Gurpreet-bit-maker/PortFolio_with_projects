@@ -34,7 +34,7 @@ function App() {
       
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/front" element={<FrontendProjects/>} />
+          <Route path="/frontendProjects" element={<FrontendProjects/>} />
           <Route path="/backend" element={<BackendDev />} />
           <Route path="/fullstack" element={<FullstackDev />} />
         </Routes>

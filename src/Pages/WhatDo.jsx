@@ -18,7 +18,7 @@ export default function WhatDo() {
         {/* Four divs */}
 
         <div className="flex  gap-5 justify-center pt-4">
-          <Link to="/front">
+          
             <div className={border}>
               <i className="fa-solid fa-laptop-code  text-green-400 text-lg  md:text-[50px]"></i>
               <h1 className="text-[12px] md:text-2xl md:pt-5 text-[#535353]">
@@ -26,7 +26,7 @@ export default function WhatDo() {
                 Frontend <br /> Development
               </h1>
             </div>
-          </Link>
+         
 
           <Link to="/backend">
             <div className={border}>
