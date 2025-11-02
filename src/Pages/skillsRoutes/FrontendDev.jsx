@@ -6,7 +6,7 @@ export default function FrontendDev() {
   // http://localhost:8080/projects
   useEffect(() => {
     axios
-      .get("https://backendform-handling-1.onrender.com/projects")
+      .get("https://api.github.com/users/Gurpreet-bit-maker/repos")
       .then((response) => {
         setProjects(response.data);
       })
@@ -26,16 +26,16 @@ export default function FrontendDev() {
             >
               <div>
                 <h2 className="text-green-400 text-xl md:text-2xl font-semibold mb-2">
-                  {items.title}
+                  {items.name}
                 </h2>
                 <p className="text-[#a1a1af] text-sm md:text-base mb-2">
                   {items.description}
                 </p>
-                <p className="text-gray-200 font-bold my-1"> Technology : { items.tech.join(" , ")}
+                <p className="text-gray-200 font-bold my-1"> Technology : { items.tech}
                 </p>
 
                 <button className="border-2 px-1 rounded-lg hover:border-green-400 text-[10px]">
-                  <a href={items.codeLink}>Code Link</a>
+                  <a href={items.html_url}>Code Link</a>
                 </button>
                 <br />
                 <button className="bg-gradient-to-r from-purple-200 via-pink-100 to-yellow-100 mt-2 tracking-wider text-black px-1 animate-pulse">

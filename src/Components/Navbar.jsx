@@ -15,7 +15,7 @@ export default function Navbar() {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `px-1 ${isActive ? "bg-blue-300 rounded-lg" : null} `
+                `px-1 ${isActive ? "bg-blue-300 rounded-lg " : null} `
               }
             >
               Home
