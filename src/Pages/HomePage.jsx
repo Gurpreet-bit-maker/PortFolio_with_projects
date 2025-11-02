@@ -28,7 +28,7 @@ export default function HomePage() {
           <div className="relative flex gap-1 mt-2 w-35 md:w-85 h-4  justify-center">
             <a
               className=" h-1  w-20"
-              href="/files/Gurpreet_Singh_Resume.docx"
+              href="/files/Gurpreet_updated (1).pdf"
               download
             >
               <button className=" absolute top-0 left-0  text-white bg-green-600 text-[10px] md:text-lg border-white border-1 w-1/2  md:w-30 h-6 md:h-10 hover:bg-black hover:text-white rounded">
