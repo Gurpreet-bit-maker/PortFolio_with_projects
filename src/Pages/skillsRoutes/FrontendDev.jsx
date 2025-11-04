@@ -20,7 +20,7 @@ export default function FrontendDev() {
         <p className="ml-2 text-green-500">Loading...</p>
         <img
           className="w-20 h-20 "
-          src="/public/__Iphone-spinner-1.gif"
+          src="/__Iphone-spinner-1.gif"
           alt="loading img"
         />
       </div>
