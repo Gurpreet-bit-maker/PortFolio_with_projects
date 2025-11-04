@@ -10,14 +10,17 @@ export default function FrontendDev() {
       .get("https://api.github.com/users/Gurpreet-bit-maker/repos")
       .then((response) => {
         setProjects(response.data);
-        setRec(false);
+        setTimeout(() => {
+          setRec(false);
+          console.log("data is fetched")
+        }, 1000);
       })
       .catch((err) => console.log(err));
   }, []);
   if (received) {
     return (
       <div className=" w-full flex flex-col justify-center  h-100 items-center ">
-        <p className="ml-2 text-green-500">Loading...</p>
+        <p className="ml-2 text-green-500 text-lg tracking-wider">Loading...</p>
         <img
           className="w-20 h-20 "
           src="/__Iphone-spinner-1.gif"
