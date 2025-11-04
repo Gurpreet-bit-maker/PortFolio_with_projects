@@ -3,15 +3,29 @@ import { useState, useEffect } from "react";
 
 export default function FrontendDev() {
   let [frontendProjects, setProjects] = useState([]);
+  let [received, setRec] = useState(true);
   // http://localhost:8080/projects
   useEffect(() => {
     axios
       .get("https://api.github.com/users/Gurpreet-bit-maker/repos")
       .then((response) => {
         setProjects(response.data);
+        setRec(false);
       })
       .catch((err) => console.log(err));
   }, []);
+  if (received) {
+    return (
+      <div className=" w-full flex flex-col justify-center  h-100 items-center ">
+        <p className="ml-2 text-green-500">Loading...</p>
+        <img
+          className="w-20 h-20 "
+          src="/public/__Iphone-spinner-1.gif"
+          alt="loading img"
+        />
+      </div>
+    );
+  }
   console.log(frontendProjects);
   return (
     <>
@@ -31,7 +45,9 @@ export default function FrontendDev() {
                 <p className="text-[#a1a1af] text-sm md:text-base mb-2">
                   {items.description}
                 </p>
-                <p className="text-gray-200 font-bold my-1"> Technology : { items.tech}
+                <p className="text-gray-200 font-bold my-1">
+                  {" "}
+                  Technology : {items.tech}
                 </p>
 
                 <button className="border-2 px-1 rounded-lg hover:border-green-400 text-[10px]">
