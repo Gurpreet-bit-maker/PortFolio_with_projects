@@ -19,10 +19,10 @@ import BackendDev from "./Pages/skillsRoutes/BackendDev";
 import About from "./Pages/About";
 import FullstackDev from "./Pages/skillsRoutes/FullstackDev";
 import FrontendProjects from "./Pages/skillsRoutes/FrontendProjects";
+import ContectsMe from "./Pages/contectsRouter/ContectsMe";
+import Allprojects from "./Pages/Allprojects";
 
 function App() {
-
-  
   return (
     <>
       {/* <WhatDo/> */}
@@ -31,12 +31,15 @@ function App() {
       {/* <FormValidation/> */}
       <BrowserRouter>
         <Navbar />
-      
+
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/frontendProjects" element={<FrontendProjects/>} />
+          <Route path="/contects" element={<ContectsMe />} />
+
+          <Route path="/allprojects" element={<Allprojects />} />
           <Route path="/backend" element={<BackendDev />} />
           <Route path="/fullstack" element={<FullstackDev />} />
+          <Route path="/frontedWork" element={<FrontendDev />} />
         </Routes>
       </BrowserRouter>
     </>

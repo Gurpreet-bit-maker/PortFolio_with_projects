@@ -2,91 +2,65 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 export default function FrontendDev() {
-  let [frontendProjects, setProjects] = useState([]);
-  let [received, setRec] = useState(true);
-  // http://localhost:8080/projects
-  useEffect(() => {
-    axios
-      .get("https://api.github.com/users/Gurpreet-bit-maker/repos")
-      .then((response) => {
-        setProjects(response.data);
-        setTimeout(() => {
-          setRec(false);
-          console.log("data is fetched")
-        }, 1000);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-  if (received) {
-    return (
-      <div className=" w-full flex flex-col justify-center  h-100 items-center ">
-        <p className="ml-2 text-green-500 text-lg tracking-wider">Loading...</p>
-        <img
-          className="w-20 h-20 "
-          src="/__Iphone-spinner-1.gif"
-          alt="loading img"
-        />
-      </div>
-    );
-  }
-  console.log(frontendProjects);
   return (
     <>
-      <div className="md:flex p-4  flex-wrap bg-green-100 rounded-lg shadow-md">
-        {frontendProjects.map((items, index) => {
-          return (
-            <div
-              key={index}
-              className="bg-[#1f1f1f] border-2 m-2 text-white rounded-2xl p-5 w-72 md:w-95 shadow-md
-                 hover:shadow-green-400/40 transition-all duration-300 hover:scale-105
-                 flex  justify-between border border-[#333] hover:border-green-400"
-            >
-              <div>
-                <h2 className="text-green-400 text-xl md:text-2xl font-semibold mb-2">
-                  {items.name}
-                </h2>
-                <p className="text-[#a1a1af] text-sm md:text-base mb-2">
-                  {items.description}
-                </p>
-                <p className="text-gray-200 font-bold my-1">
-                  {" "}
-                  Technology : {items.tech}
-                </p>
+      <div className=" ">
+        <div className="bg-green-300 p-3  h-28">
+          <div className="bg-gray-300 rounded-lg p-1">
+            <h1 className="text-center text-lg font-bold my-1">
+              Frontend Technology
+            </h1>
+            {/* <img
+            className="w-20"
+            src="https://img.icons8.com/?size=100&id=dhecLjnptiQg&format=png&color=000000"
+            alt=""
+          /> */}
 
-                <button className="border-2 px-1 rounded-lg hover:border-green-400 text-[10px]">
-                  <a href={items.html_url}>Code Link</a>
-                </button>
-                <br />
-                <button className="bg-gradient-to-r from-purple-200 via-pink-100 to-yellow-100 mt-2 tracking-wider text-black px-1 animate-pulse">
-                  <a href={items.liveLink}>Live Demo</a>
-                </button>
-              </div>
-            </div>
-          );
-        })}
+            <ul className="bg-gray-200 p-1 shadow-2xl font-sanf text-sm flex flex-col gap-y-3 tracking-wider text-shadow-sm ">
+              <li className=" ">
+                HTML{" "}
+                <img
+                  className="w-6 ml-1 inline"
+                  src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
+                  alt=""
+                />{" "}
+              </li>
+              <li>
+                CSS{" "}
+                <img
+                  className="w-6 ml-1 inline"
+                  src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"
+                  alt=""
+                />{" "}
+              </li>
+              <li>
+                JS{" "}
+                <img
+                  className="w-6 ml-1 inline"
+                  src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+                  alt=""
+                />
+              </li>
+              <li>
+                REACT JS{" "}
+                <img
+                  className="w-6 ml-1 inline"
+                  src="https://img.icons8.com/?size=100&id=9vlfB9hjA1lX&format=png&color=000000"
+                  alt=""
+                />
+              </li>
+              <li>
+                TAILWIND CSS{" "}
+                <img
+                  className="w-6 ml-1 inline"
+                  src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </>
   );
 }
-// <div
-//   className="bg-[#1f1f1f] m-2 text-white rounded-2xl p-5 w-72 md:w-96 shadow-md
-//                 hover:shadow-green-400/40 transition-all duration-300 hover:scale-105
-//                 flex flex-col justify-between border border-[#333] hover:border-green-400"
-// >
-
-//   <div >
-//     <h2 className="text-green-400 text-xl md:text-2xl font-semibold mb-2">
-//       {title}
-//     </h2>
-//     <p className="text-[#a1a1af] text-sm md:text-base mb-2">
-//       {description}
-//     </p>
-//    <p className="text-orange-300">{tech}</p>
-//   </div>
-// </div>
-
-// title,
-//   description,
-//   tech,
-//   liveLink,
-//   codeLink,

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FrontendDev from "./FrontendDev";
 
-export default function AllProjects() {
+export default function FrontendProjects() {
 
 let [projects, setProjects] = useState();
 
@@ -32,12 +32,11 @@ let [projects, setProjects] = useState();
   //   },
   // ];
 
-
-
   return (
     <>
       <h1 className="text-2xl md:text-2xl font-bold text-center">Frontend Projects</h1>
-      <FrontendDev/>
+      {/* <FrontendDev/> */}
+      
       {/* {frontendPro.map((items, index) => {
         <h1>hello</h1>;
         return (

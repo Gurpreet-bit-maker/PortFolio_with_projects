@@ -24,16 +24,14 @@ export default function Navbar() {
               <a href="">About me</a>
             </li>
             <NavLink
-              to="/frontendProjects"
+              to="/allprojects"
               className={({ isActive }) =>
                 ` px-1 ${isActive ? "bg-blue-300 rounded-lg" : null}`
               }
             >
               My Projects
             </NavLink>
-            <li>
-              <a href="">Contect me</a>
-            </li>
+            <NavLink to="/contects" className={({isActive}) => `px-1 ${isActive ? "bg-blue-300 rounded-lg": null}`}>Contect me</NavLink>
           </ul>
         </nav>
       </div>

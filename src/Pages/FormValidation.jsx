@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTransition } from "react";
 
+
+
+
 export default function FormValidation() {
   let {
     register,
@@ -12,7 +15,7 @@ export default function FormValidation() {
 
   //! using varible
   const BASE_URL =
-    "https://backendformhandling-production.up.railway.app" ||
+    "https://backendform-handling-1.onrender.com" ||
     "http://localhost:8080";
 
   let [userdata, setuserData] = useState([]);
@@ -27,9 +30,9 @@ export default function FormValidation() {
         body: JSON.stringify(data),
       });
 
-      if (!res.ok) {
-        throw new Error("Failed to submit");
-      }
+      // if (!data.ok) {
+      //   throw new Error("Failed to submit");
+      // }
       // setuserData({ ...userdata }, data);
     } catch (error) {
       console.log(error);
