@@ -5,9 +5,9 @@ export default function FrontendDev() {
   return (
     <>
       <div className=" ">
-        <div className="bg-green-300 p-3  h-28">
+        <div className="bg-green-300 p-3  h-35">
           <div className="bg-gray-300 rounded-lg p-1">
-            <h1 className="text-center text-lg font-bold my-1">
+            <h1 className="text-center text-2xl font-bold my-1">
               Frontend Technology
             </h1>
             {/* <img
@@ -16,7 +16,7 @@ export default function FrontendDev() {
             alt=""
           /> */}
 
-            <ul className="bg-gray-200 p-1 shadow-2xl font-sanf text-sm flex flex-col gap-y-3 tracking-wider text-shadow-sm ">
+            <ul className="bg-gray-200 p-1 shadow-2xl font-sanf text-lg flex flex-col gap-y-5 tracking-wider text-shadow-sm ">
               <li className=" ">
                 HTML{" "}
                 <img

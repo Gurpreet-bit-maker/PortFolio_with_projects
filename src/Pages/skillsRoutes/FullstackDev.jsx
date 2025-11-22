@@ -13,7 +13,7 @@ export default function FullstackDev() {
             alt=""
           /> */}
 
-            <ul className="bg-gray-200 p-1 shadow-2xl font-sanf text-lg flex flex-col gap-y-3 tracking-wider text-shadow-sm ">
+            <ul className="bg-gray-200 p-1 shadow-2xl font-sanf text-lg flex flex-col gap-y-5 tracking-wider text-shadow-sm ">
               <li className=" ">
                 HTML{" "}
                 <img
